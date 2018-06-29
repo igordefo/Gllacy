@@ -1,0 +1,136 @@
+.main-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+}
+
+.flex__left {
+    display: flex;
+    align-items: center;
+}
+
+.main-header__logo {
+    margin-right: 25px;
+}
+
+.main-nav__items {
+    display: inline;
+    margin-right: 27px;
+}
+
+.main-nav__items:last-of-type {
+    margin-right: 0;
+}
+
+.user-block__items {
+    display: inline;
+}
+
+.main-header__contacts {
+    position: absolute;
+    top: 75px;
+    right: 0;
+}
+
+.user-block__search::before,
+.user-block__enter::before,
+.user-block__basket::before {
+    background-image: url("../../img/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 256px 64px;
+}
+
+.user-block__search::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 17px;
+    height: 17px;
+    background-position: 0 0;
+  }
+
+  .user-block__search {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 4px;
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    text-indent: -1000px;
+    overflow: hidden;
+  }
+
+  .user-block__basket {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 15px 8px 48px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .user-block__basket::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    width: 21px;
+    height: 19px;
+    background-position: -128px 0;
+  }
+
+  .user-block__enter {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 16px 8px 44px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .user-block__enter::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 16px;
+    width: 21px;
+    height: 19px;
+    background-position: -64px 0;
+  }
+
+  .main-header__phone, .main-header__hours {
+    display: block;
+    color: #ffffff;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .main-header__phone {
+    font-size: 22px;
+  }
