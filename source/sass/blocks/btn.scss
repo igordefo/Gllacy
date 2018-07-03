@@ -1,0 +1,66 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    font: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
+    background-image: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background-image: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+            box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+    border-radius: 22px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
+    background-image: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background-image: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 1);
+            box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 1);
+  }
+  
+  .btn:active {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d74632), to(#e1613e));
+    background-image: -webkit-linear-gradient(top, #d74632 0%, #e1613e 100%);
+    background-image: -o-linear-gradient(top, #d74632 0%, #e1613e 100%);
+    background-image: linear-gradient(to bottom, #d74632 0%, #e1613e 100%);
+    -webkit-box-shadow: inset 0 2px 2px 0 #942718;
+            box-shadow: inset 0 2px 2px 0 #942718;
+  }
+  
+  .btn--large {
+    padding: 9px 40px 11px;
+    font-size: 32px;
+    line-height: 44px;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+    border-radius: 32px;
+  }
+  
+  .btn--large:hover {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 1);
+            box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 1);
+  }
+  
+  .btn--large:active {
+    -webkit-box-shadow: inset 0 2px 2px 0 #942718;
+            box-shadow: inset 0 2px 2px 0 #942718;
+  }
+  
+  .btn--medium {
+    padding: 11px 22px;
+  }
+  
+  .btn--full-width {
+    width: 100%;
+  }
