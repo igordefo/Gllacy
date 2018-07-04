@@ -1,0 +1,48 @@
+.promo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+
+.promo__item--1 {
+  background: #5c0e1f url(../../img/bg-raspberries.jpg) no-repeat center;
+}
+
+.promo__item--2 {
+  background: #5c0e1f url(../../img/bg-chocolate.jpg) no-repeat center;
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 229px;
+  width: 48.9%;
+  border-radius: 15px;
+
+}
+
+.promo__title {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.promo__description {
+  margin: 20px 0 43px 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.promo__link {
+  align-self: flex-end;
+  width: 168px;
+}
+
+.price__weight {
+  font-size: 30px;
+}
+
