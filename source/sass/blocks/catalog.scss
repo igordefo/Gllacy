@@ -1,0 +1,48 @@
+.catalog__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.catalog__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog__flag {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 61px;
+  height: 61px;
+  background: url(../../img/icons/hit.svg) no-repeat top left;
+  background-size: 61px 61px;
+}
+
+.catalog__link {
+  display: block;
+  color: #fff;
+  text-align: center;
+  
+}
+
+.catalog__price {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.catalog__name {
+  display: inline;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
