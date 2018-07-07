@@ -1,0 +1,72 @@
+.advantages {
+    margin-top: 37px;
+    background: #ecdec5 url(../../img/waffle.jpg) top left;
+    color: #323232;
+    border-radius: 15px;
+    padding: 23px 0 25px;
+}
+
+.advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.advantages__item {
+    position: relative;
+    padding-top: 14px;
+    padding-left: 56px;
+    margin-top: 8px;
+    width: 48.9%;
+}
+
+.advantages__title {
+    margin: 0 20px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.advantages__item:nth-child(2n+1) {
+    padding-left: 76px;
+}
+
+.advantages__item:nth-child(2n) {
+    padding-right: 20px;
+  }
+
+.advantages__item::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 49px;
+    height: 49px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 49px 49px;
+}
+
+.advantages__item--icecream::before {
+    background-image: url(../../img/icons/ice-cream.svg);
+}
+
+.advantages__item--cow::before {
+    background-image: url(../../img/icons/cow.svg);
+}
+
+.advantages__item--eco::before {
+    background-image: url(../../img/icons/eco.svg);
+}
+
+.advantages__item--temperature::before {
+    background-image: url(../../img/icons/thermometer.svg);
+}
+
+.advantages__item:nth-child(2n+1)::before {
+    left: 20px;
+}
