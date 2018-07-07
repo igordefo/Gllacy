@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.catalog__item img {
+  width: calc(100%);
+}
+
 .catalog__flag {
   position: absolute;
   display: block;
