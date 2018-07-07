@@ -1,0 +1,72 @@
+.news {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.news__item {
+    width: 48.9%;
+    border-radius: 15px;
+}
+
+.news-item--article {
+    box-sizing: border-box;
+    padding: 30px 20px;
+    height: 220px;
+    background: #fff url(../../img/bg-icecream.png) no-repeat right top;
+}
+
+.news__title {
+    margin: 0;
+    color: #323232;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.news__subtitle {
+    color: #323232;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: underline;
+}
+
+.news__subscription {
+    min-height: 220px;
+    color: #5a5a5a;
+    background-color: #fff;
+    background-image: repeating-linear-gradient(135deg,transparent 0,transparent 6.855px,#92cdff 6.855px,#92cdff 13.71px,transparent 13.71px,transparent 20.565px,#fe9e90 20.565px,#fe9e90 27.42px);
+    padding: 5px;
+}
+
+.news__layout {
+    padding: 30px 20px 36px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.subscription {
+    margin-top: auto;
+  }
+  
+  .subscription__layout {
+    display: flex;
+    align-items: center;
+  }
+  
+  .subscription__fields {
+    flex-grow: 1;
+    width: 100%;
+  }
+  
+  .subscription__submit-wrap {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 11px;
+    min-width: 130px;
+  }
+  
+  .subscription__btn {
+    width: 100%;
+  }
