@@ -46,6 +46,14 @@
     border-radius: 15px;
 }
 
+.news__text--subscription {
+    margin: 0 0 40px 0;
+    color: #5a5a5a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
 .subscription {
     margin-top: auto;
   }
@@ -58,6 +66,15 @@
   .subscription__fields {
     flex-grow: 1;
     width: 100%;
+  }
+
+  .subscription__input {
+    padding: 16px;
+    width: 371px;
+    height: 47px;
+    color: #999999;
+    border: 1px solid rgba(178, 178, 178, 0.52);
+    border-radius: 5px;
   }
   
   .subscription__submit-wrap {

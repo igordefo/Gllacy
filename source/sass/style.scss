@@ -1,1 +1,12 @@
-@import 'global/page.scss'
+@import 'normalize.scss';
+@import 'global/page.scss';
+
+@import 'blocks/header.scss';
+@import 'blocks/slider.scss';
+@import 'blocks/btn.scss';
+@import 'blocks/promo.scss';
+@import 'blocks/catalog.scss';
+@import 'blocks/advantages.scss';
+@import 'blocks/news.scss';
+@import 'blocks/map.scss';
+@import 'blocks/footer.scss';

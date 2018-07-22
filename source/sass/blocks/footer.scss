@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
 
 .social-icon {
@@ -72,12 +73,56 @@
   }
 
 .footer__about-link {
+    margin-top: -3px;
     font-size: 13px;
     line-height: 18px;
     color: #ffffff;
     font-family: Roboto;
     font-size: 13px;
     font-weight: 400;
+    line-height: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer__about-items--heart .footer__about-link {
+    position: relative;
+}
+
+.footer__about-items--heart .footer__about-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 1px;
+    left: -22px;
+    width: 16px;
+    height: 16px;
+    background: url(../../img/heart.svg) no-repeat center;
+}
+
+.footer__about-link:hover, .site-link:hover
+.footer__about-link:focus, .site-link:focus
+.footer__about-link:active, .site-link:active  {
+    color: #ffbc9e;
+    border-color: rgba(249, 172, 159, 0.3);
+}
+
+.copyright__link {
+    display: block;
+}
+
+.copyright__made {
+    margin: 0;
+    color: #fefefe;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.site-link {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
     line-height: 18px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
