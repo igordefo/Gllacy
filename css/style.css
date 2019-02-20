@@ -423,19 +423,19 @@ body {
   margin-right: auto;
   margin-left: auto; }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
   .container {
     max-width: 540px; } }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .container {
     max-width: 720px; } }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .container {
     max-width: 960px; } }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
     max-width: 1140px; } }
 
@@ -964,6 +964,7 @@ a {
   line-height: 22px; }
 
 .subscription {
+  position: relative;
   margin-top: auto; }
 
 .subscription__layout {
@@ -982,13 +983,20 @@ a {
 
 .subscription__input {
   padding: 16px;
-  width: 371px;
-  height: 47px;
+  width: 100%;
+  height: 45px;
   color: #999999;
   border: 1px solid rgba(178, 178, 178, 0.52);
-  border-radius: 5px; }
+  border-radius: 22px; }
+  .subscription__input:focus {
+    outline: none;
+    -webkit-box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2); }
 
 .subscription__submit-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1001,59 +1009,10 @@ a {
   width: 100%; }
 
 .map {
-  position: relative;
-  height: 470px; }
-
-.map__wrap {
-  position: relative; }
-
-.map__iframe {
-  position: absolute;
-  background: url(../../img/ya-map.png) no-repeat center;
-  margin-top: 40px; }
-
-.map svg {
-  position: absolute;
-  z-index: 1;
-  left: -629px;
-  top: 37px; }
-
-.map__contacts {
-  position: absolute;
-  top: 100px;
-  right: 0;
-  padding: 30px 20px;
-  width: 305px;
-  height: 308px;
-  background-color: #fff;
-  color: #323232;
-  border-radius: 15px;
-  z-index: 2; }
-
-.map__address-title, .map__phone-title {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px; }
-
-.map__adress {
-  margin: 6px 0 18px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px; }
-
-.map__phone {
-  display: block;
-  margin-top: 6px;
-  margin-bottom: 5px;
-  text-decoration: none;
-  color: #323232;
-  font-size: 18px;
-  font-weight: 700; }
-
-.map__feedback-btn {
-  display: block;
-  margin-top: 20px; }
+  width: 80%;
+  height: 300px;
+  margin: 30px auto;
+  background: #999; }
 
 .main-footer {
   display: -webkit-box;
