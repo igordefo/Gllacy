@@ -9,12 +9,12 @@
     text-decoration: none;
     font-weight: 700;
     border: none;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
-    background-image: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-    background-image: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
-    background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-    -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
-            box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+    background-image: -webkit-gradient(linear, left top, left bottom, from($accent-color-light), to($accent-color-dark));
+    background-image: -webkit-linear-gradient(top, $accent-color-light 0%, $accent-color-dark 100%);
+    background-image: -o-linear-gradient(top, $accent-color-light 0%, $accent-color-dark 100%);
+    background-image: linear-gradient(to bottom, $accent-color-light 0%, $accent-color-dark 100%);
+    -webkit-box-shadow: 0 2px 2px 0 rgba($accent-color-shadow, 0.64);
+            box-shadow: 0 2px 2px 0 rgba($accent-color-shadow, 0.64);
     border-radius: 22px;
     text-align: center;
     cursor: pointer;
@@ -26,17 +26,17 @@
     background-image: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
     background-image: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
     background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-    -webkit-box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 1);
-            box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 1);
+    -webkit-box-shadow: 0 1px 2px 0 rgba($accent-color-shadow, 1);
+            box-shadow: 0 1px 2px 0 rgba($accent-color-shadow, 1);
   }
   
   .btn:active {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d74632), to(#e1613e));
-    background-image: -webkit-linear-gradient(top, #d74632 0%, #e1613e 100%);
-    background-image: -o-linear-gradient(top, #d74632 0%, #e1613e 100%);
-    background-image: linear-gradient(to bottom, #d74632 0%, #e1613e 100%);
-    -webkit-box-shadow: inset 0 2px 2px 0 #942718;
-            box-shadow: inset 0 2px 2px 0 #942718;
+    background-image: -webkit-gradient(linear, left top, left bottom, from($accent-color-active-dark), to($accent-color-active-light));
+    background-image: -webkit-linear-gradient(top, $accent-color-active-dark 0%, $accent-color-active-light 100%);
+    background-image: -o-linear-gradient(top, $accent-color-active-dark 0%, $accent-color-active-light 100%);
+    background-image: linear-gradient(to bottom, $accent-color-active-dark 0%, $accent-color-active-light 100%);
+    -webkit-box-shadow: inset 0 2px 2px 0 $accent-color-shadow;
+            box-shadow: inset 0 2px 2px 0 $accent-color-shadow;
   }
   
   .btn--large {
@@ -48,13 +48,13 @@
   }
   
   .btn--large:hover {
-    -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 1);
-            box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 1);
+    -webkit-box-shadow: 0 2px 2px 0 rgba($accent-color-shadow, 1);
+            box-shadow: 0 2px 2px 0 rgba($accent-color-shadow, 1);
   }
   
   .btn--large:active {
-    -webkit-box-shadow: inset 0 2px 2px 0 #942718;
-            box-shadow: inset 0 2px 2px 0 #942718;
+    -webkit-box-shadow: inset 0 2px 2px 0 $accent-color-shadow;
+            box-shadow: inset 0 2px 2px 0 $accent-color-shadow;
   }
   
   .btn--medium {
